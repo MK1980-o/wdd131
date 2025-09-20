@@ -29,17 +29,41 @@ header {
   padding: 1rem;
 }
 
-picture img {
-  width: 100%;
-  display: block;
+.hero {
+  position: relative;
 }
 
-section {
-  background: var(--light);
-  margin: 1rem;
+.hero picture img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 5px;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 10px;
+  background: rgba(0, 0, 0, 0.6); 
+  color: white;
   padding: 1rem;
   border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  max-width: 45%;
+  font-size: 0.9rem;
+}
+
+.data {
+  left: 10px;
+}
+
+.weather {
+  right: 10px;
+  text-align: left;
+}
+
+.weather-icon {
+  width: 40px;
+  display: block;
+  margin-bottom: 0.5rem;
 }
 
 h2 {
@@ -55,34 +79,21 @@ ul li {
   padding: 0.3rem 0;
 }
 
-.mobile-icon {
-  width: 50px;
-  display: block;
-  margin: 0.5rem auto;
-}
-
-@media (min-width: 768px) {
-  .weather h2::after {
-    content: " ☀️"; 
-    font-size: 1.5rem;
+@media (max-width: 767px) {
+  .overlay {
+    max-width: 90%;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
   }
 
-  main {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 1rem;
+  .weather {
+    right: auto;
   }
 
-  picture {
-    grid-column: 1 / -1;
-  }
-
-  footer {
-    grid-column: 1 / -1;
-  }
-
-  .mobile-icon {
-    display: none;
+  .weather-icon {
+    margin: 0 auto 0.5rem auto;
   }
 }
 
