@@ -1,0 +1,97 @@
+:root {
+  --primary: #006400; /* Green */
+  --secondary: #ff0000; /* Red */
+  --accent: #ffd700; /* Yellow */
+  --light: #ffffff; /* White */
+  --dark: #333;
+  --font-main: Arial, Helvetica, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-main);
+  line-height: 1.6;
+  background: var(--accent);
+  color: var(--dark);
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+header {
+  background: var(--primary);
+  color: var(--light);
+  text-align: center;
+  padding: 1rem;
+}
+
+picture img {
+  width: 100%;
+  display: block;
+}
+
+section {
+  background: var(--light);
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+h2 {
+  color: var(--secondary);
+  margin-bottom: 0.5rem;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li {
+  padding: 0.3rem 0;
+}
+
+.mobile-icon {
+  width: 50px;
+  display: block;
+  margin: 0.5rem auto;
+}
+
+@media (min-width: 768px) {
+  .weather h2::after {
+    content: " ☀️"; 
+    font-size: 1.5rem;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+  }
+
+  picture {
+    grid-column: 1 / -1;
+  }
+
+  footer {
+    grid-column: 1 / -1;
+  }
+
+  .mobile-icon {
+    display: none;
+  }
+}
+
+footer {
+  text-align: center;
+  background: var(--secondary);
+  color: var(--light);
+  padding: 1rem;
+  margin-top: 1rem;
+  border-radius: 10px;
+  font-size: 0.9rem;
+}

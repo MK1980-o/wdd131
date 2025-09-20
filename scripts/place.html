@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zimbabwe</title>
+  <link rel="stylesheet" href="styles/place.css">
+  <script src="scripts/place.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Zimbabwe</h1>
+  </header>
+
+  <main>
+    
+    <picture>
+      <source srcset="images/zimbabwe-large.webp" media="(min-width: 768px)">
+      <img src="images/zimbabwe-small.webp" alt="Harare in Zimbabwe">
+    </picture>
+
+    <section class="data">
+      <h2>Data</h2>
+      <ul>
+        <li><strong>Area:</strong> 390,757 sq km</li>
+        <li><strong>Population:</strong> 16,320,537</li>
+        <li><strong>Capital:</strong> Harare</li>
+        <li><strong>Languages:</strong> English, Shona, Sindebele</li>
+        <li><strong>Currency:</strong> Zimbabwean Dollar (ZWL)</li>
+        <li><strong>Time Zone:</strong> UTC+2</li>
+        <li><strong>Calling Code:</strong> +263</li>
+        <li><strong>Internet TLD:</strong> .zw</li>
+      </ul>
+    </section>
+
+    <section class="weather">
+      <h2>Weather</h2>
+      
+      <img class="mobile-icon" src="images/sun-cloud.svg" alt="Sunny with clouds">
+      <ul>
+        <li><strong>Temperature:</strong> 22°C</li>
+        <li><strong>Conditions:</strong> Sunny</li>
+        <li><strong>Wind:</strong> 10 km/h</li>
+        <li><strong>Wind Chill:</strong> <span id="windchill"></span></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Marko Kuriyazi | Zimbabwe</p>
+    <p>Last Modification: <span id="lastModified"></span></p>
+  </footer>
+</body>
+</html>
