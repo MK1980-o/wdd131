@@ -1,0 +1,113 @@
+:root {
+  --primary: #3b003b;
+  --primary-hover: #580058;
+  --background: #f7f7f7;
+  --text: #222;
+}
+
+body {
+  font-family: "Inter", Arial, sans-serif;
+  background-color: var(--background);
+  color: var(--text);
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: var(--primary);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+footer {
+  background-color: var(--primary);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+.product-review {
+  max-width: 420px;
+  margin: 2rem auto;
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+label, legend {
+  display: block;
+  margin-top: 1rem;
+  font-weight: 600;
+}
+
+.required {
+  color: red;
+}
+
+input[type="text"],
+input[type="date"],
+select,
+textarea {
+  width: 100%;
+  padding: 0.6rem;
+  margin-top: 0.3rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.rating label {
+  display: inline-block;
+  margin-right: 0.4rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.checkboxes label {
+  display: block;
+  margin-top: 0.3rem;
+}
+
+input[type="submit"] {
+  background-color: var(--primary);
+  color: white;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 6px;
+  margin-top: 1.5rem;
+  width: 100%;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: var(--primary-hover);
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 500px) {
+  .product-review {
+    margin: 1rem;
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: 1.3rem;
+  }
+}
